@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Pirate Shop</title>
+    <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="oneclick_coding.css">
+    <script type="text/javascript" src="oneclick_coding.js">
+    </script>
+  </head>
+  <body>
+      <div class="Heading">
+        Welcome to the Pirate shop. Please fill the shopping cart:
+      </div>
+      <div class="Choses">
+        <!-- We are making the inputs: everythin is linked with ID for javascript -->
+        <p>Star Wars Episode IV DVD ($20) <input type="number" min="0"  id="IVDVD" value=0
+          onchange="change(this)"></p>
+        <p>Star Wars Episode V DVD ($20) <input type="number" min="0"  id="VDVD" value=0
+          onchange="change(this)"></p>
+        <p>Star Wars Episode VI DVD ($20) <input type="number" min="0"  id="VIDVD" value=0
+          onchange="change(this)"></p>
+        <p>Star Wars Episode IV Blu-Ray ($25) <input type="number" min="0"  id="IVBR" value=0
+           onchange="change(this)"></p>
+        <p>Star Wars Episode V Blu-Ray ($25) <input type="number" min="0"  id="VBR" value=0
+          onchange="change(this)"></p>
+        <p>Star Wars Episode VI Blu-Ray ($25) <input type="number" min="0" id="VIBR" value=0
+          onchange="change(this)"></p>
+      </div>
+
+      <p style="color:white;"> This is your shopping cart:</p>
+      <div class="Shopping_cart">
+
+        <div class="titles">
+
+          <p > Number of Star Wars Episode IV DVD</p>
+
+          <p > Number of Star Wars Episode V DVD</p>
+          <p > Number of Star Wars Episode VI DVD</p>
+          <p > Number of Star Wars Episode IV Blu-Ray</p>
+          <p > Number of Star Wars Episode V Blu-Ray</p>
+          <p > Number of Star Wars Episode VI Blu-Ray</p>
+          <p > Discount </p>
+          <p >Total: </p>
+        </div>
+
+        <div class="vals">
+            <p id="valIVDVD"> 0 </p>
+            <p id="valVDVD">0</p>
+            <p id="valVIDVD">0</p>
+            <p id="valIVBR">0</p>
+            <p id="valVBR">0</p>
+            <p id="valVIBR">0</p>
+            <p id="Discount">0</p>
+            <p id="Total">0</p>
+        </div>
+        <div class="button" style="left:35%; position:absolute;">
+          <button type="button" onclick="sendorder()">Send Secret Order</button>
+
+        </div>
+
+      </div>
+  </body>
+</html>

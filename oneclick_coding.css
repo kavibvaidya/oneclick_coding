@@ -1,0 +1,52 @@
+/*  The font and color selection are necessary for the theme and the readability*/
+
+.Heading {
+  font-size: 30px;
+  font-family: fantasy;
+  color: yellow;
+}
+
+/* We are making a piracy website, so why not begin with image piracy? */
+body {
+  background-image: url("pirate_background.jpg");
+  background-size: 100%;
+}
+
+.Choses {
+  color: yellow;
+  font-family: "Pirata One", cursive;
+}
+
+/* For making it look good. Otherwise it will not be alinged */
+ input {
+   position: absolute;
+   left: 30%;
+ }
+
+ .Shopping_cart {
+   display: flex;
+   flex-direction: row;
+   color: white;
+   font-family: fantasy;
+ }
+
+button{
+    background: transparent;
+    border: solid;
+    border-color: Black;
+    font-size: 20px;
+    color: Yellow;
+    padding: 20px 25px;
+    text-align: center;
+}
+
+.titles{
+  padding-right: 50px;
+}
+
+
+ .val {
+   postion: absolute;
+   left: 30%;
+   float: middle;
+ }
